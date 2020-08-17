@@ -53,7 +53,7 @@ public class Main {
 
     }
 
-    public static double randInt() {
+    public static double randNumb() {
         return Math.random();
     }
 
