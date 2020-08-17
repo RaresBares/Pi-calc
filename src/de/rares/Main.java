@@ -11,7 +11,7 @@ public class Main {
 
 
     public static void main(String[] args) {
-        System.out.println("Please Time teh accurancy: NUMBER [ 10 - 100.000.000 recommended ]");
+        System.out.println("Please Time the accurancy: NUMBER [ 10 - 100.000.000 recommended ]");
         Scanner sc = new Scanner(System.in);
         long times = sc.nextLong();
 
@@ -24,7 +24,7 @@ public class Main {
 
 
         for (long i = 0; i < times; i++) {
-            Point p = new Point(randInt(), randInt());
+            Point p = new Point(randNumb(), randNumb());
             if(points <999) {
                 points += 1;
             }else if (points == 999){
@@ -32,7 +32,7 @@ public class Main {
                 pointsK += 1;
             }
 
-            if (p.distanceToZero() <= 1) {
+            if (p.distanceToZero() < 1) {
 
                 if(pointsInElemCircle <999) {
                     pointsInElemCircle += 1;
